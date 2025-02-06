@@ -22,11 +22,6 @@ pipeline {
             '''    
             }
         }
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/DforDevops-channel/HelloWorld.git'
-            }
-        }
         stage('Build') {
             steps {
                 sh '''
